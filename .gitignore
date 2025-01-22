@@ -7,3 +7,14 @@
 
 #Ignore MacOS Finder file
 .DS_Store
+
+# Rproject files
+*.Rproj
+*_KEY.Rmd
+*_KEY.pdf
+*_FIXED.Rmd
+*_TOPOST/
+*_TOPOST.Rmd
+*_TODELETE.Rmd
+*_NOPOST.xlsx
+*_NOPOST.Rmd
