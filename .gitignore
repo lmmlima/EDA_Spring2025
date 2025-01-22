@@ -10,6 +10,7 @@
 
 # Rproject files
 *.Rproj
+*_Complete.Rmd
 *_KEY.Rmd
 *_KEY.pdf
 *_FIXED.Rmd
