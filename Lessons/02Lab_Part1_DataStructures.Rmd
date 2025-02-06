@@ -39,10 +39,11 @@ vector1 <- c(1,2,5.3,6,-2,4) # Vector type: Numeric
 vector1
 class(vector1)
 
-vector2 <- c("one","two","three") # Vector type: 
+vector2 <- c("one","two","three") # Vector type: chr
 vector2
+class(vector2)
 
-vector3 <- c(TRUE,TRUE,TRUE,FALSE,TRUE,FALSE) # Vector type:
+vector3 <- c(TRUE,TRUE,TRUE,FALSE,TRUE,FALSE) # Vector type: logic
 vector3
 ```
 
@@ -60,7 +61,7 @@ max(vector1)
 vector4 <- c(10:15)
 
 #
-c(vector1, vector4)
+test <- c(vector1, vector4)
 
 #
 vector1 * vector4
@@ -83,16 +84,17 @@ Find a 5-day forecast of temperatures (Fahrenheit) for Durham, North Carolina. C
 ```{r Vector Exercise}
 
 #Assign to the variable 'temps_F' a vector of high temperatures in F
-
+temps_F <- c(43,47,53,54,60)
 
 #What is the average of these temperatures 
-
+avgF <- mean(temps_F)
+avgF
 
 #Compute the difference between each temperature and the average calculated above
-
+temps_F - avgF
 
 #Subtract 32 and multiply by 5/9ths to create a vector in Celsius
-
+temps_C <- (temps_F-32)* 5/9
 
 ```
 
@@ -119,6 +121,7 @@ matrix3 <- matrix(
     c("un", "deux", "trois", "quatre")
     )
   ) 
+matrix3
 
 ```
 
@@ -126,9 +129,9 @@ matrix3 <- matrix(
 Add comments in the code chunk below to indicate type of vectors created and what each operation does.
 ```{r Matrix Operations}
 
-matrix1[4, 1] #
+matrix1[4, 1] # 4
 
-matrix1[4,  ] #
+matrix1[4,  ] # 4  9 14 19
 
 matrix1[ , 3] #
 
@@ -163,7 +166,7 @@ matrix4['R2','C1']
 ### Exercise 1b: Matrices
 Compute the mean of column "C2" in matrix4. (Should be 14.5)
 ```{r Matrix Exercise}
-
+mean(matrix4[,"C2"])
 ```
 
 
